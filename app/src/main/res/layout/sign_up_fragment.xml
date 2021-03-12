@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.signupfragement.SignUpFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/signUpHeaderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_for_less_screen_content"
+                android:text="@string/sign_up_page_header_text"
+                android:textSize="@dimen/header_size_for_less_screen_content"
+                app:layout_constraintBottom_toTopOf="@+id/brandingTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <Button
+                android:id="@+id/signUpWithGoogleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/sign_up_with_google_button_text"
+                app:backgroundTint="@android:color/holo_red_dark"
+                app:layout_constraintBottom_toTopOf="@+id/signUpWithFacebookButton"
+                app:layout_constraintEnd_toEndOf="@+id/signUpWithFacebookButton"
+                app:layout_constraintStart_toStartOf="@+id/signUpWithFacebookButton"
+                app:layout_constraintTop_toBottomOf="@+id/signUpHeaderTextView"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <Button
+                android:id="@+id/signUpWithFacebookButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:text="@string/sign_up_with_facebook_button_text"
+                app:backgroundTint="@android:color/holo_blue_dark"
+                app:layout_constraintBottom_toTopOf="@+id/otpSignUpButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signUpWithGoogleButton" />
+
+            <Button
+                android:id="@+id/otpSignUpButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/otp_sign_up_button_text"
+                app:layout_constraintBottom_toTopOf="@+id/signInSwitchButton"
+                app:layout_constraintEnd_toEndOf="@+id/signUpWithFacebookButton"
+                app:layout_constraintStart_toStartOf="@+id/signUpWithFacebookButton"
+                app:layout_constraintTop_toBottomOf="@+id/signUpWithFacebookButton" />
+
+            <TextView
+                android:id="@+id/brandingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/branding_text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/signUpWithGoogleButton"
+                app:layout_constraintEnd_toEndOf="@+id/signUpHeaderTextView"
+                app:layout_constraintStart_toStartOf="@+id/signUpHeaderTextView"
+                app:layout_constraintTop_toBottomOf="@+id/signUpHeaderTextView" />
+
+            <Button
+                android:id="@+id/signInSwitchButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottom_margin_less_screen_content"
+                android:text="@string/sign_in_switch_button_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>

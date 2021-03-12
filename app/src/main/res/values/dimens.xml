@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_margin_less_screen_content">60dp</dimen>
+    <dimen name="top_margin_for_less_screen_content">100dp</dimen>
+    <dimen name="header_size_for_less_screen_content">36sp</dimen>
+</resources>

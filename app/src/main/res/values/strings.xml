@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">OAuthRestApiLoginTest</string>
+
+    <!-- Sign In Screen Strings-->
+    <string name="sign_in_page_header_text">Sign in</string>
+    <string name="branding_text">tutorial app by @princebillygk</string>
+    <string name="sign_in_with_google_button_text">Sign in with Google</string>
+    <string name="sign_in_with_facebook_button_text">Sign in with Facebook</string>
+    <string name="otp_sign_in_button_text">OTP Sign in</string>
+    <string name="sign_up_switch_button_text">Don\'t have an account?</string>
+
+    <!-- Sign up Screen Strings -->
+    <string name="sign_up_page_header_text">Sign up</string>
+    <string name="sign_up_with_google_button_text">Sign up with Google</string>
+    <string name="sign_up_with_facebook_button_text">Sign up with Facebook</string>
+    <string name="otp_sign_up_button_text">OTP Sign up</string>
+    <string name="sign_in_switch_button_text">Already have an account ?</string>
+    <string name="new_account_page_header_text">Create New Account</string>
+    <string name="sign_out_button_text">Sign out</string>
+
+    <string name="dob_field_name">Date of Birth</string>
+    <string name="submit_button_text">Submit</string>
+    <string name="last_name_field_name">Last Name</string>
+    <string name="first_name_field_name">First name</string>
+
+</resources>

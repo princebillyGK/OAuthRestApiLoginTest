@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.newaccountfragment.NewAccountFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/newAccountPageHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_for_less_screen_content"
+                android:text="@string/new_account_page_header_text"
+                android:textSize="@dimen/header_size_for_less_screen_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/firstNameInput"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="given-name"
+                android:ems="10"
+                android:hint="@string/first_name_field_name"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/lastNameInput"
+                app:layout_constraintEnd_toEndOf="@+id/dateOfBirthInput"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/dateOfBirthInput"
+                app:layout_constraintTop_toBottomOf="@+id/newAccountPageHeader"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/lastNameInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="family-name"
+                android:ems="10"
+                android:hint="@string/last_name_field_name"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/dateOfBirthInput"
+                app:layout_constraintEnd_toEndOf="@+id/firstNameInput"
+                app:layout_constraintStart_toStartOf="@+id/firstNameInput"
+                app:layout_constraintTop_toBottomOf="@+id/firstNameInput" />
+
+            <EditText
+                android:id="@+id/dateOfBirthInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="bday"
+                android:ems="10"
+                android:hint="@string/dob_field_name"
+                android:inputType="date"
+                app:layout_constraintBottom_toTopOf="@+id/submitButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newAccountPageHeader" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottom_margin_less_screen_content"
+                android:text="@string/submit_button_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

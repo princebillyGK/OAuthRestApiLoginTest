@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/secretFragment">
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.princebillygk.oauthrestapilogintest.fragments.signinfragment.SignInFragment"
+        android:label="sign_in_fragment"
+        tools:layout="@layout/sign_in_fragment">
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_secretFragment"
+            app:destination="@id/secretFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.princebillygk.oauthrestapilogintest.fragments.signupfragement.SignUpFragment"
+        android:label="sign_up_fragment"
+        tools:layout="@layout/sign_up_fragment">
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signUpFragment_to_newAccountFragment"
+            app:destination="@id/newAccountFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/newAccountFragment"
+        android:name="com.princebillygk.oauthrestapilogintest.fragments.newaccountfragment.NewAccountFragment"
+        android:label="new_account_fragment"
+        tools:layout="@layout/new_account_fragment">
+        <action
+            android:id="@+id/action_newAccountFragment_to_secretFragment"
+            app:destination="@id/secretFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/secretFragment"
+        android:name="com.princebillygk.oauthrestapilogintest.fragments.secretfragment.SecretFragment"
+        android:label="secret_fragment"
+        tools:layout="@layout/secret_fragment">
+        <action
+            android:id="@+id/action_secretFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
