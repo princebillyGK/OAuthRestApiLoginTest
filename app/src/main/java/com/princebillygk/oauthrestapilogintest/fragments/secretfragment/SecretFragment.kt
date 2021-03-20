@@ -8,6 +8,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.princebillygk.oauthrestapilogintest.R
 import com.princebillygk.oauthrestapilogintest.databinding.SecretFragmentBinding
 
@@ -20,6 +23,7 @@ class SecretFragment : Fragment() {
 
     private lateinit var binding: SecretFragmentBinding
     private lateinit var viewModel: SecretViewModel
+    private lateinit var mGoogleSignInClient: GoogleSignInClient
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,7 +41,17 @@ class SecretFragment : Fragment() {
         return binding.root
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        mGoogleSignInClient = GoogleSignIn.getClient(
+            requireActivity(),
+            GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build()
+        )
+    }
+
     private fun handleSignOut() {
-        findNavController().navigate(R.id.action_secretFragment_to_signInFragment)
+        mGoogleSignInClient.signOut().addOnCompleteListener {
+            findNavController().navigate(R.id.action_secretFragment_to_signInFragment)
+        }
     }
 }

@@ -5,6 +5,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        my_default_keystore {
+            storeFile file('/media/princebillygk/princebillygk/Android App Keystores/my-default-keystore.jks')
+            storePassword 'ZinathSaba01711864817&1168127'
+            keyAlias 'my_default_key'
+            keyPassword 'ZinathSaba01711864817&1168127'
+        }
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
@@ -37,7 +45,10 @@ android {
 }
 
 dependencies {
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
 
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'

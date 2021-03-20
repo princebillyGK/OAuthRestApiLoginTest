@@ -23,4 +23,7 @@
     <string name="last_name_field_name">Last Name</string>
     <string name="first_name_field_name">First name</string>
 
+    <!--Google SSO constants-->
+    <string name="google_sso_server_client_id">41794809283-efe7b8qcegklgbt4pgl1mk88kbv5nj09.apps.googleusercontent.com</string>
+
 </resources>
