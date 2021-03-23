@@ -1,4 +1,4 @@
-package com.princebillygk.oauthrestapilogintest.requests.authentication.google
+package com.princebillygk.oauthrestapilogintest.api.requests.authentication.google
 
 import com.squareup.moshi.Json
 

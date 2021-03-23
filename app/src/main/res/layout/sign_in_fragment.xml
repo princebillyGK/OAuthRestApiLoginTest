@@ -54,17 +54,17 @@
                 android:layout_marginRight="24dp"
                 android:text="@string/sign_in_with_facebook_button_text"
                 app:backgroundTint="@android:color/holo_blue_dark"
-                app:layout_constraintBottom_toTopOf="@+id/otpSignUpButton"
+                app:layout_constraintBottom_toTopOf="@+id/sign_in_with_mobile_button"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/signInWithGoogleButton" />
 
             <Button
-                android:id="@+id/otpSignUpButton"
+                android:id="@+id/sign_in_with_mobile_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="@string/otp_sign_in_button_text"
+                android:text="@string/mobile_sign_in_button_text"
                 app:layout_constraintBottom_toTopOf="@+id/signUpSwitchButton"
                 app:layout_constraintEnd_toEndOf="@+id/signInWithFacebookButton"
                 app:layout_constraintStart_toStartOf="@+id/signInWithFacebookButton"

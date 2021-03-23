@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.OtpFragements.OtpRequestFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/otpRequestPageHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/OtpRequestPageHeader"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/phoneInput"
+                app:layout_constraintEnd_toEndOf="@+id/phoneInput"
+                app:layout_constraintStart_toStartOf="@+id/phoneInput"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <net.rimoto.intlphoneinput.IntlPhoneInput
+                android:id="@+id/phoneInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/otpRequestDescriptionText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/otpRequestPageHeading" />
+
+
+            <TextView
+                android:id="@+id/otpRequestDescriptionText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/otp_request_input_description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/teal_700"
+                app:layout_constraintBottom_toTopOf="@+id/verifyButton"
+                app:layout_constraintEnd_toEndOf="@+id/phoneInput"
+                app:layout_constraintStart_toStartOf="@+id/phoneInput"
+                app:layout_constraintTop_toBottomOf="@+id/phoneInput" />
+
+            <Button
+                android:id="@+id/verifyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:text="@string/verify_now_button_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/phoneInput"
+                app:layout_constraintStart_toStartOf="@+id/phoneInput"
+                app:layout_constraintTop_toBottomOf="@+id/otpRequestDescriptionText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

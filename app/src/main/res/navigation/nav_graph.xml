@@ -32,6 +32,9 @@
             android:id="@+id/action_signUpFragment_to_newAccountFragment"
             app:destination="@id/newAccountFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_signUpFragment_to_otpRequestFragment"
+            app:destination="@id/otpRequestFragment" />
     </fragment>
     <fragment
         android:id="@+id/newAccountFragment"
@@ -55,4 +58,9 @@
             app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/otpRequestFragment"
+        android:name="com.princebillygk.oauthrestapilogintest.fragments.OtpFragements.OtpRequestFragment"
+        android:label="otp_request_fragment"
+        tools:layout="@layout/otp_request_fragment" />
 </navigation>

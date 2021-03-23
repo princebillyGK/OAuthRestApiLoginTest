@@ -1,4 +1,4 @@
-package com.princebillygk.oauthrestapilogintest.requests.user
+package com.princebillygk.oauthrestapilogintest.api.requests.user
 
 import com.princebillygk.oauthrestapilogintest.models.User
 import com.squareup.moshi.Json

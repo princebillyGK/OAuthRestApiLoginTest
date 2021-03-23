@@ -6,14 +6,14 @@
     <string name="branding_text">tutorial app by @princebillygk</string>
     <string name="sign_in_with_google_button_text">Sign in with Google</string>
     <string name="sign_in_with_facebook_button_text">Sign in with Facebook</string>
-    <string name="otp_sign_in_button_text">OTP Sign in</string>
+    <string name="mobile_sign_in_button_text">Sign in with mobile</string>
     <string name="sign_up_switch_button_text">Don\'t have an account?</string>
 
     <!-- Sign up Screen Strings -->
     <string name="sign_up_page_header_text">Sign up</string>
     <string name="sign_up_with_google_button_text">Sign up with Google</string>
     <string name="sign_up_with_facebook_button_text">Sign up with Facebook</string>
-    <string name="otp_sign_up_button_text">OTP Sign up</string>
+    <string name="mobile_sign_up_button_text">Sign up with mobile</string>
     <string name="sign_in_switch_button_text">Already have an account ?</string>
     <string name="new_account_page_header_text">Create New Account</string>
     <string name="sign_out_button_text">Sign out</string>
@@ -25,5 +25,9 @@
 
     <!--Google SSO constants-->
     <string name="google_sso_server_client_id">41794809283-efe7b8qcegklgbt4pgl1mk88kbv5nj09.apps.googleusercontent.com</string>
+    <string name="OtpRequestPageHeader">Enter your phone number</string>
+    <string name="otp_request_input_description">A verification code will be send to this phone number</string>
+    <string name="otp_request_phone_input_hint">Enter your phone number</string>
+    <string name="verify_now_button_text">Verify Now</string>
 
 </resources>

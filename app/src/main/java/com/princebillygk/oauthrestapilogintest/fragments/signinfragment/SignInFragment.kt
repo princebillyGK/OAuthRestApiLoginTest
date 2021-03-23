@@ -28,10 +28,9 @@ class SignInFragment : Fragment() {
     ): View? {
         navController = findNavController()
         binding = DataBindingUtil.inflate(inflater, R.layout.sign_in_fragment, container, false)
-        binding.otpSignUpButton.setOnClickListener { otpSignInHandler() }
+        binding.signInWithMobileButton.setOnClickListener { otpSignInHandler() }
         binding.signInWithGoogleButton.setOnClickListener { googleSignInHandler() }
         binding.signInWithFacebookButton.setOnClickListener { facebookSignInHandler() }
-        binding.otpSignUpButton.setOnClickListener { otpSignInHandler() }
         binding.signUpSwitchButton.setOnClickListener {navController.navigate(R.id.action_signInFragment_to_signUpFragment) }
         return binding.root
     }
